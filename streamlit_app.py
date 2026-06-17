@@ -45,6 +45,9 @@ if ingredients_list:
         sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
 
+all_fruits = requests.get("https://my.smoothiefroot.com/api/fruit/all")
+st.dataframe(data=all_fruits.json(), use_container_width=True)
+    
 #    st.write(ingredients_string)
 
 
