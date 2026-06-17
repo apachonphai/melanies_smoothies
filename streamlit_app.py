@@ -5,7 +5,7 @@ from snowflake.snowpark.functions import col
 
 
 # Write directly to the app
-st.title("🥤 Customize Your Smoothies! 🥤")
+st.title("🥤 Customize Your Smoothie! 🥤")
 
 st.write("""
 Choose the fruits you want in your custom Smoothie!
@@ -55,7 +55,7 @@ if ingredients_list:
     if time_to_insert:
         session.sql(insert_stmt).collect()
         
-        st.success(f'Your Smoothie is ordered, {name_on_order}!', icon="✅")
+        st.success(f'Your Smoothie is ordered{name_on_order}!', icon="✅")
 
 
     
